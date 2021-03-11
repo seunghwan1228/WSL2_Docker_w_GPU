@@ -45,6 +45,11 @@ Get started
 ## Need to change your update setting
 
 ![setting_1](assets/insider_setting_1.png)
+```
+click 
+
+Go to Diagnostics & Feedback settings to turn on optinal diagnostic data.
+```
 ![setting_2](assets/insider_setting_2.png)
 ![setting_3](assets/insider_setting_3.png)
 
