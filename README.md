@@ -36,7 +36,7 @@ Get started
 
 ![after register](assets/after_register.png)
 
-![after login](assets/how_should_look.png)
+
 
 - Follow the Guid
 
@@ -57,6 +57,10 @@ Go to Diagnostics & Feedback settings to turn on optinal diagnostic data.
 ## Set a Channel  - (I choosed Dev-Channel)
 
 ![select_channel](assets/insider_setting_channel.png)
+<br/><br/>
+
+## Finally Ready to get Preview Build
+![after login](assets/how_should_look.png)
 <br/><br/>
 ##  Start Update :smile:
 
