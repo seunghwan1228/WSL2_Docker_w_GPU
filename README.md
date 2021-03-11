@@ -73,6 +73,9 @@ there will the latest window build start with 21xxx (Mar.11 2021)
 
 [Check Windows Insider Blog](https://blogs.windows.com/windows-insider/)
 
+## After Update
+![after update](assets/after_update.png)
+
 ----------
 
 
