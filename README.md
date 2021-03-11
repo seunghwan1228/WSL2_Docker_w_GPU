@@ -54,13 +54,13 @@ Get started
 ![select_channel](assets/insider_setting_channel.png)
 <br/><br/>
 ##  Start Update :smile:
-![start_update](assets/start_update.png)
 
 Click
 ```
 Check Update
 ```
 there will the latest window build start with 21xxx (Mar.11 2021)
+![UPDATE](assets/update_feature.png)
 
 [Check Windows Insider Blog](https://blogs.windows.com/windows-insider/)
 
