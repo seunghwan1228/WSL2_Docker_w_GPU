@@ -76,6 +76,8 @@ there will the latest window build start with 21xxx (Mar.11 2021)
 ## After Update
 ![after update](assets/after_update.png)
 
+requires to update additional features
+![update additionals](assets/update_additional.png)
 ----------
 
 
