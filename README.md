@@ -27,6 +27,17 @@
 
 [https://insider.windows.com/en-us/register](https://insider.windows.com/en-us/register)
 
+You will see this after register
+
+Click 
+```
+Get started
+```
+
+![after register](assets/after_register.png)
+
+![after login](assets/how_should_look.png)
+
 - Follow the Guid
 
 ![flight](assets/update_flight.png)
