@@ -84,6 +84,10 @@ requires to update additional features
 
 
 install WSL2
+
 install Ubuntu
+
 install Docker
+
 check gpu working
+
