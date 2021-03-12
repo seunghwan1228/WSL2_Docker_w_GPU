@@ -275,7 +275,10 @@ EOF
 
 
 After restart WSL, you will see 
+
+
 ![Docker init](assets/docker_init.png)
+
 
 ## :exclamation: My testing does not solve below commend :(
    ```
