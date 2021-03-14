@@ -451,7 +451,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
 ```
 
 ```bash
-# lETS TEST
+# Lets TEST
 
 nvcc -V
 ```
