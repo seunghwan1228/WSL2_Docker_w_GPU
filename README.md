@@ -9,6 +9,7 @@
 # :one: Windows preview build
 # :two: WSL2 
 # :three: Docker with gpu support
+# :four: Miniconda with wsl2
 
 ---
 
