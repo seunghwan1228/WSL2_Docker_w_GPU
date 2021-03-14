@@ -515,8 +515,11 @@ print(tf.__version__)
 print(tf.test.is_gpu_available())
 ```
 
+
 ![complete test](assets/complete_test.png)
 
+# Testing
+![test](assets/test_running.gif)
 # References
 
 [Windows Official](https://insider.windows.com/en-us/)
