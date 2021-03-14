@@ -159,13 +159,29 @@ Pre-Requires: Install Font
 
 The powerlevel10k font requires **"MesloLGS NF"**
 
+### **After setting font, restart terminal**
+
 ```bash
 sudo apt-get install zsh
+```
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
 ```
 
 ![my env](assets/zsh_and_powerlevel.png)
 
 ## [update windows terminal settings](assets/settings.json)
+
+## If your configuration is does not looks like, below cmd will restart configuration :)
+
+```bash
+p10k configure
+```
+
 
 
 <br/><br/>
@@ -277,6 +293,7 @@ echo "$USER ALL=NOPASSWD:/usr/bin/mount -t cgroup -o none\,name=systemd cgroup /
 Update ~/.bashrc
 
 [Copy  below]
+## Below cmd are auto starting docker when wsl start
 ```bash
 cat << EOF >> ~/.bashrc
 ## Start docker if not already running
