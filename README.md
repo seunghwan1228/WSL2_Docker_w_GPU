@@ -417,7 +417,14 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 
+## [ bash ]
+open bash rc
 ```bash
+sudo nano ~/.bashrc
+```
+
+```bash
+# Add cuda variable paths
 # Cuda path dir may different yours, check dir name
 
 # PATH=/usr/local/YOUR-CUDA-DIR-NAME/bin ...
