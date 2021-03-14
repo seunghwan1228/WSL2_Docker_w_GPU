@@ -418,6 +418,15 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 
 ```bash
+# Cuda path dir may different yours, check dir name
+
+# PATH=/usr/local/YOUR-CUDA-DIR-NAME/bin ...
+export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+
+```bash
 # lETS TEST
 
 nvcc -V
@@ -447,6 +456,8 @@ sudo nano ~/.zshrc
 ```
 
 ```bash
+# Scrol down to USER CONFIGURATION and add three lines
+
 export PATH=/home/han/miniconda3/bin:$PATH
 
 export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
@@ -455,21 +466,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
 ```
 ![zsh var](assets/zsh_variable.png)
 
-## [ BASH ]
-
-```
-sudo nano ~/.bashrc
-```
-
-
-```bash
-# Cuda path dir may different yours, check dir name
-
-# PATH=/usr/local/YOUR-CUDA-DIR-NAME/bin ...
-export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-```
 
 ### Update Variables
 ```bash
