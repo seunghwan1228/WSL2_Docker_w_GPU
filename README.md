@@ -146,11 +146,29 @@ Setting Configuration
 
 :two: [Ubuntu Icon](assets/ubuntu_32px.png)
 
-:computer: I use Anaconda on my window system also. So I changed the first options as conda prompt
-
+:computer: I use Anaconda on my window system also. So I changed the first options as conda prompt, will introduce later
 
 <br/><br/>
 
+
+
+# Option - Using [**ohmyzsh**](https://github.com/ohmyzsh/ohmyzsh) and [**powerlevel10k**](https://github.com/romkatv/powerlevel10k)
+
+Pre-Requires: Install Font
+[Get Font](https://github.com/romkatv/powerlevel10k/blob/master/font.md)
+
+The powerlevel10k font requires **"MesloLGS NF"**
+
+```bash
+sudo apt-get install zsh
+```
+
+![my env](assets/zsh_and_powerlevel.png)
+
+## [update windows terminal settings](assets/settings.json)
+
+
+<br/><br/>
 # install Docker and Cuda
 
 ## :exclamation: Make sure you have nvidia GPU already 
@@ -356,9 +374,128 @@ sudo nano /etc/docker/daemon.json
         }
     }
 }
+
+
+```
+
+<br/><br/>
+
+# WSL2 with conda and GPU Support
+
+:one: Download Cudnn
+
+:two: Download Miniconda
+
+:three: environment Variable Setting
+
+----------
+# Get CUDNN from Nvidia Official
+![cudnn](assets/cudnn.png)
+
+I downloaded **cuDNN Library for linux[x86_64]** from windows system and copy to Linux File system
+
+## To Access Linux File System, Search as 
+
+```
+# on windows folder serach start with
+
+\\wsl\
+```
+![how to search](assets/howtosearch.png)
+
+The downloaded cuDNN will represent as 
+
+**cudnn-11.2-linux-x64-v8.1.1.33.solitairetheme8**
+
+```bash
+# Untar cuDNN
+tar -xzvf cudnn-11.2-linux-x64-v8.1.1.33.solitairetheme8
+
+# COPY TO cuda dirs
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include
+sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+```
+
+```bash
+# lETS TEST
+
+nvcc -V
+```
+![nvcc](assets/nvcc.png)
+
+
+## Download miniconda [get conda Linux Installers](https://docs.conda.io/en/latest/miniconda.html)
+
+![get conda](assets/get_conda.png)
+
+
+## Install 
+```
+./Miniconda3-latest-Linux-x86.sh
+```
+
+# :exclamation: If you installed ZSH, conda command may not working after installation, if you are using bash, its okay :)
+
+
+## add envirionment variables
+
+## [ ZSH ]
+
+```
+sudo nano ~/.zshrc
+```
+
+```bash
+export PATH=/home/han/miniconda3/bin:$PATH
+
+export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+![zsh var](assets/zsh_variable.png)
+
+## [ BASH ]
+
+```
+sudo nano ~/.bashrc
 ```
 
 
+```bash
+# Cuda path dir may different yours, check dir name
+
+# PATH=/usr/local/YOUR-CUDA-DIR-NAME/bin ...
+export PATH=/usr/local/cuda-11.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+
+### Update Variables
+```bash
+# zsh
+sudo source ~/.zshrc
+
+#bash
+sudo source ~/.bashrc
+```
+
+
+# Install Your packages
+
+```bash
+conda install python=3.7 # i use 3.7 python
+
+pip install tensorflow-gpu
+```
+
+```python
+import tensorflow as tf
+print(tf.__version__)
+print(tf.test.is_gpu_available())
+```
+
+![complete test](assets/complete_test.png)
 
 # References
 
