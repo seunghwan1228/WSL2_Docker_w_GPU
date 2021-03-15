@@ -1,5 +1,5 @@
 <br/><br/>
-# Install WSL2 and Docker with GPU availiable
+# Install WSL2, Docker, anaconda with GPU availiable
 
  Author: Seunghwan Oh
  - [Han](https://github.com/seunghwan1228) 
