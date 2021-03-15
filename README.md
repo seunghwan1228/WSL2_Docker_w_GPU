@@ -526,7 +526,7 @@ print(tf.test.is_gpu_available())
 
 # Testing
 ![test](assets/test_running.gif)
-![test gpu](assets/test_running_gpu.gif)
+![test gpu](assets/test_running_gpu_2.gif)
 # References
 
 [Windows Official](https://insider.windows.com/en-us/)
