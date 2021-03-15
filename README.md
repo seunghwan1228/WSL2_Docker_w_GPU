@@ -217,6 +217,10 @@ sudo apt-get install -y cuda-toolkit-11-0
 ```
 
 <br/><br/>
+# !!! For 30XX GPU - Requires to install cuda-toolkit >= 11.1
+<br/><br/>
+
+<br/><br/>
 ### In Ubuntu
 After complete cuda toolkit installation, **Restart WSL2 in powershell or cmd on windows**
 ```Powershell
