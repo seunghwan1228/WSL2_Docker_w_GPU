@@ -151,7 +151,10 @@ Setting Configuration
 
 <br/><br/>
 
-
+## For SSH verification Fail
+```
+git config --global http.sslVerify false
+```
 
 # Option - Using [**ohmyzsh**](https://github.com/ohmyzsh/ohmyzsh) and [**powerlevel10k**](https://github.com/romkatv/powerlevel10k)
 
